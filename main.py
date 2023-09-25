@@ -18,7 +18,6 @@ class mertHttp(BaseHTTPRequestHandler):
         self.send_header("Content-type", "application/json")
         self.end_headers()
 
-        date = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime((time.time())))
         self.wfile.write(bytes("This is a POST request..","utf-8"))
 
 
